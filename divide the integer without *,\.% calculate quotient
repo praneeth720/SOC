@@ -1,0 +1,8 @@
+n1=int(input(""))
+n2=int(input(""))
+c=-1
+s=0
+while(n1>=s):
+    s=n2+s
+    c+=1
+print(c)
