@@ -1,0 +1,15 @@
+n = int(input("Enter the number of values: "))  
+list = []
+for i in range(n):
+    v = int(input(f"Enter value {i+1}: "))
+    list.append(v)
+c = {}
+for v in list:
+    if v in c:
+        c[v] += 1
+    else:
+        c[v] = 1
+for i in c.keys():
+    print(i,end="")
+    print("-->",end="")
+    print(c[i])
