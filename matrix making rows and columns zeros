@@ -1,0 +1,18 @@
+raw =[[1,3,6],[2,0,6],[4,8,12]]
+row=len(raw)
+col = len(raw[0]) if row >0 else 0
+lrows=set()
+lcols=set()
+for i in range (row):
+    for j in range (col):
+        if raw[i][j]==0:
+            lrows.add(i)
+            lcols.add(j)
+for i in lrows:
+    for j in range(col):
+        raw[i][j]=0
+for j in lcols:
+    for i in range(row):
+        raw[i][j]=0
+for r in raw:
+    print(r)
